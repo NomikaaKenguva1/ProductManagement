@@ -1,0 +1,216 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  background-color: palevioletred;
+  color: rgb(255, 255, 255);
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 5px;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.login-register {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.login-register h3 {
+  margin-right: 20px;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 18vh;
+  margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.search-container input[type=submit] {
+  padding: 10px 20px;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  margin-left: 4px;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.search-container input[type=submit]:hover {
+  background-color: white;
+  color: palevioletred;
+  border: 2px solid palevioletred;
+  cursor: pointer;
+}
+
+.login-register a {
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-register a:hover {
+  background-color: white;
+  color: skyblue;
+  border: 2px solid skyblue;
+}
+
+.select {
+  margin-right: 10px;
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.search-container label {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: palevioletred;
+  color: black;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.filters-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters-container label {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: palevioletred;
+  color: black;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.filters-container input[type=number] {
+  padding: 5px;
+  width: 100px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.filters-container button {
+  padding: 5px 10px;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.filters-container button:hover {
+  background-color: white;
+  color: palevioletred;
+  border: 2px solid palevioletred;
+  cursor: pointer;
+}
+
+#product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  width: 300px;
+  background-color: palevioletred;
+  margin: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+h2 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.price-filter-container {
+  margin-top: 20px;
+}
+
+.price-filter-container label {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.price-filter-container input[type=radio] {
+  margin-right: 5px;
+}
+
+.price-filter-container input[type=radio]:hover {
+  cursor: pointer;
+}
+
+.price-filter-container button {
+  padding: 5px 10px;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.price-filter-container button:hover {
+  background-color: white;
+  color: palevioletred;
+  border: 2px solid palevioletred;
+  cursor: pointer;
+}
+select{
+  height: 5vh;
+  width:10vw;
+  margin-right: 2vw;
+  cursor: pointer;
+}

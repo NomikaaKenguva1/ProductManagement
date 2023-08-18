@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <h1> PRODUCTS CATALOGUE</h1>
+    <div class="login-register">
+      <h3> Welcome {{username}}</h3>   <a (click)="logout()">logout</a>
+    </div>
+  </div>
+
+  <div class="search-container">
+    <form>
+      <label for="Filters">Filter :</label>
+      <select class="select" [(ngModel)]="search.filter" [ngModelOptions]="{standalone: true}" style="color:black;">
+        <option value="productname">product name</option>
+        <option value="productcode">product code</option>
+        <option value="brand">brand</option>
+      </select>
+      <input type="text" placeholder="Search products..." [(ngModel)]="search.productinp" name="searchInput">
+      <input type="submit" value="Search" (click)="searching()">
+      <p *ngIf="filterset" class="error-message">Please Select filter.</p>
+    </form>
+  </div>
+  
+  <div class="filters-container">
+    <label for="sortDirection">Sort By:</label>
+    <select [(ngModel)]="sortDirection" name="sortDirection">
+      <option value="lowToHigh">Low to High</option>
+      <option value="highToLow">High to Low</option>
+    </select>
+    <button (click)="applyFilter()">Apply Filter</button>
+  </div>
+  
+  <div *ngIf="products.length > 0">
+    <h1>Products Available</h1>
+    <div id="product-cards">   
+      <div class="product-card" *ngFor="let product of products; let i = index" [ngClass]="getCardColor(i)">
+        <h3>product code: {{product.productcode}}</h3>
+        <h3>{{ product.productname }}</h3>
+        <h3>{{ product.brand }}</h3>
+        <h3>price: {{product.price}}</h3>
+        <a (click)="viewDetails(product)" style="text-decoration:underline; color:darkblue">View Details</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

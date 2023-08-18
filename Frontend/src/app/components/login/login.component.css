@@ -1,0 +1,85 @@
+header {
+    text-align: center;
+    background-color: palevioletred;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+    align-items: center;
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+  font-size: 36px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+a,.login {
+  padding: 10px 20px;
+  background-color: skyblue; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 4px;
+  text-decoration: none; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+  a:hover,.login:hover{
+    background-color: white ;
+    color:skyblue;
+    cursor: pointer;
+    border:2px solid skyblue;
+  }
+  .login-card {
+    width: 350px;
+    height: 250px;
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgba(174, 163, 163, 0.1);
+    color: white;
+    margin-top: 5%;
+    margin-left: 36%;
+  }
+  
+  .login-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .input-field input[type="text"],
+  .input-field input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+  }
+ 
+  
+  .error-message{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+  }

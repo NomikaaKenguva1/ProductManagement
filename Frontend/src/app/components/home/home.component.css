@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: skyblue; 
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding:0 5px 0 5px;
+  align-items: center;
+  background-color:palevioletred; 
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 4px;
+}
+
+h1 {
+  font-size: 36px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-register {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-register a {
+  margin-left: 10px;
+  color: white; 
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px; 
+  width: 300px;
+  border-radius: 4px;
+  border: 2px solid #777; 
+  font-size: 16px; 
+}
+
+.search-container input[type="submit"] {
+  padding: 12px 24px; 
+  background-color: palevioletred; 
+  color: #fff;
+  border: none;
+  margin-left: 4px;
+  border-radius: 4px;
+  font-weight: bold; /* Add font weight for emphasis */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.search-container input[type="submit"]:hover {
+  border:2px solid palevioletred;
+  background-color: whitesmoke;
+  color:palevioletred;
+  cursor: pointer;
+}
+
+a {
+  padding: 10px 20px;
+  background-color: skyblue; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 4px;
+  text-decoration: none; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+
+
+.login-register a:hover{
+  background-color: white;
+  color: skyblue;
+  border:2px solid skyblue;
+
+}
+

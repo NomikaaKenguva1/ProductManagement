@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    <h1> PRODUCTS CATALOGUE</h1>
+    <div class="login-register">
+      <p> Welcome {{username}}<p>   <a (click)="logout()">logout</a>
+      </div>
+  </div>
+
+  <div *ngIf="results.length > 0">
+    <h2 class="results">Results</h2>
+  <div  id="product-cards">
+  <div class="product-card" *ngFor="let product of results; let i = index" [ngClass]="getCardColor(i)">
+    <h3>product code: {{product.productcode}}</h3>
+    <h3>{{ product.productname }}</h3>
+    <h3>{{ product.brand }}</h3>
+    <a (click)="viewDetails(product)" style="text-decoration: underline;color: darkblue;">View Details</a>
+  </div>
+</div>
+  </div>
+</body>
+</html>
